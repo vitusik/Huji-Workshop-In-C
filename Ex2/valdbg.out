@@ -1,0 +1,954 @@
+==29815== Memcheck, a memory error detector
+==29815== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==29815== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==29815== Command: ./a.out Gomoku.in Gomoku.out
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x401639: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401783: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x520267a is 0 bytes after a block of size 10 alloc'd
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x401639: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4017B1: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x520267a is 0 bytes after a block of size 10 alloc'd
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4009A7: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4009B8: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202598 is 8 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x4009C7: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid write of size 1
+==29815==    at 0x4009CB: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x520267a is 0 bytes after a block of size 10 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid write of size 4
+==29815==    at 0x4009D4: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202530 is 16 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid write of size 4
+==29815==    at 0x4009DE: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202534 is 20 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x40169E: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202530 is 16 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x4016A8: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202534 is 20 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401700: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401717: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202524 is 4 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401723: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202524 is 4 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x401730: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40161D: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401755: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40162E: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401755: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x401639: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401755: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x520262a is 0 bytes after a block of size 10 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x40175E: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40161D: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401783: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40162E: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401783: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202598 is 8 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x40178C: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40161D: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4017B1: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40162E: checkSequence (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4017B1: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x4008B2: swtichPlayer (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400E33: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid write of size 1
+==29815==    at 0x4008C8: swtichPlayer (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400E33: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x400986: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x40131A: isYourTurn (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40144E: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x40146E: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x40147C: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202524 is 4 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4014E0: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4014F1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x52025d8 is 72 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x4014FC: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x52028f1 is 1 bytes inside a block of size 10 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x40170B: getWinner (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DD6: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid write of size 1
+==29815==    at 0x4008BE: swtichPlayer (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400E33: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x4011BC: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x4011D1: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202524 is 4 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401205: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x520252c is 12 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401213: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202528 is 8 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401221: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202534 is 20 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x40122F: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202530 is 16 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x40123D: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202538 is 24 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x4012B7: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x4012A7: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202524 is 4 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40127E: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x40128F: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 1
+==29815==    at 0x40129A: resizeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40149A: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202620 is 0 bytes inside a block of size 10 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 4
+==29815==    at 0x401828: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4017E7: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x4017F8: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x401804: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x401815: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid free() / delete / delete[] / realloc()
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202620 is 0 bytes inside a block of size 10 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40181F: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x401833: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid read of size 8
+==29815==    at 0x401840: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202540 is 32 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid free() / delete / delete[] / realloc()
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202590 is 0 bytes inside a block of size 80 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x40184B: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== Invalid free() / delete / delete[] / realloc()
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Address 0x5202520 is 0 bytes inside a block of size 40 free'd
+==29815==    at 0x4C2CE2B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x401857: freeBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014B1: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  Block was alloc'd at
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x401098: createNewDefaultBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400CC2: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== 
+==29815== Process terminating with default action of signal 11 (SIGSEGV)
+==29815==  Access not within mapped region at address 0x9
+==29815==    at 0x4009CB: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815==  If you believe this happened as a result of a stack
+==29815==  overflow in your program's main thread (unlikely but
+==29815==  possible), you can try to increase the size of the
+==29815==  main thread stack using the --main-stacksize= flag.
+==29815==  The main thread stack size used in this run was 8388608.
+==29815== 
+==29815== HEAP SUMMARY:
+==29815==     in use at exit: 2,144 bytes in 48 blocks
+==29815==   total heap usage: 106 allocs, 82 frees, 3,404 bytes allocated
+==29815== 
+==29815== 320 bytes in 3 blocks are indirectly lost in loss record 1 of 5
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400F5E: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4010BC: duplicateBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014BD: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== 552 bytes in 1 blocks are still reachable in loss record 2 of 5
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x4EA711C: __fopen_internal (iofopen.c:69)
+==29815==    by 0x400C72: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== 552 bytes in 1 blocks are still reachable in loss record 3 of 5
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x4EA711C: __fopen_internal (iofopen.c:69)
+==29815==    by 0x400C8E: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== 600 bytes in 40 blocks are indirectly lost in loss record 4 of 5
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400FC2: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4010BC: duplicateBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014BD: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== 1,040 (120 direct, 920 indirect) bytes in 3 blocks are definitely lost in loss record 5 of 5
+==29815==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==29815==    by 0x400EF8: createNewBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4010BC: duplicateBoard (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x4014BD: putBoardSquare (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x40099E: makeMove (in /home/gnome/Desktop/c/a.out)
+==29815==    by 0x400DCA: main (in /home/gnome/Desktop/c/a.out)
+==29815== 
+==29815== LEAK SUMMARY:
+==29815==    definitely lost: 120 bytes in 3 blocks
+==29815==    indirectly lost: 920 bytes in 43 blocks
+==29815==      possibly lost: 0 bytes in 0 blocks
+==29815==    still reachable: 1,104 bytes in 2 blocks
+==29815==         suppressed: 0 bytes in 0 blocks
+==29815== 
+==29815== For counts of detected and suppressed errors, rerun with: -v
+==29815== ERROR SUMMARY: 2589 errors from 57 contexts (suppressed: 0 from 0)
